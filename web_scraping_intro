@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+import requests
+from lxml import html, etree
+from collections import defaultdict
+
+page = requests.get('https://twitter.com/search?f=tweets&vertical=news&q=ucla')
+
+print (page.content)
+
+
